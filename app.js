@@ -1,6 +1,9 @@
 // Instantiate a GitHub class
 const github = new GitHub();
 
+// Instantiate a UI class
+const ui = new UI;
+
 // Search input
 const searchUser = document.getElementById('searchUser');
 
@@ -21,6 +24,7 @@ searchUser.addEventListener ('keyup', (e) => {
 
          } else {
             // Show the profile
+            ui.showProfile(data.profile);
          }
       })
    } else {
